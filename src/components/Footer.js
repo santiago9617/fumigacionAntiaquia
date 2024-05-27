@@ -15,7 +15,6 @@ function Footer() {
           <a href="#inicio" className="mx-2 text-gray-400 hover:text-white">Inicio</a>
           <a href="#services" className="mx-2 text-gray-400 hover:text-white">Servicios</a>
           <a href="#clients" className="mx-2 text-gray-400 hover:text-white">Clientes</a>
-          <a href="#contact" className="mx-2 text-gray-400 hover:text-white">Contacto</a>
         </div>
         <div className="mt-4 md:mt-0">
           <p className="text-gray-400">&copy; 2024 FUMIPLAGAS JR. Todos los derechos reservados.</p>

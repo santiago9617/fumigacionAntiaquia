@@ -1,5 +1,5 @@
 import React from 'react';
-import { PhoneIcon, ShieldCheckIcon } from '@heroicons/react/24/solid';  // Importa otros íconos necesarios
+import { PhoneIcon, ShieldCheckIcon } from '@heroicons/react/24/solid';  
 
 const PromocionFumigacion = () => {
   return (
@@ -10,7 +10,7 @@ const PromocionFumigacion = () => {
           <div className="flex items-center justify-center md:justify-start mb-4">
             <ShieldCheckIcon className="h-6 w-6 text-white mr-2" />
             <p className="text-lg font-mono text-white">
-              <span className="bg-yellow-300 text-gray-800 font-bold px-2 py-1 rounded-md">Garantía de 6 meses</span>
+            <span className="bg-yellow-300 text-gray-800 font-bold px-2 py-1 rounded-md">Garantía de 6 meses para aplicaciones residenciales</span>
             </p>
           </div>
           <p className="text-base text-white">
