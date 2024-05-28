@@ -6,7 +6,7 @@ function About() {
     
         const openWhatsAppChat = () => {
           const mensaje = encodeURIComponent("Buen día, me gustaría recibir más información sobre los servicios que ofrece Fumiplagas. ¿Podrían proporcionarme detalles sobre sus servicios de fumigación y el proceso de solicitud? Quedo a la espera de su respuesta. Gracias");
-          window.open(`https://wa.me/573014894440?text=${mensaje}`, '_blank');
+          window.open(`https://wa.me/573194312083?text=${mensaje}`, '_blank');
         };
   return (
     <div className="relative h-screen bg-white">
