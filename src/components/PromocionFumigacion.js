@@ -23,10 +23,10 @@ const PromocionFumigacion = () => {
             <PhoneIcon className="h-6 w-6 text-white mr-2" />
             Teléfono:
           </p>
-          <a href="tel:+3194312083" className="text-2xl font-bold text-yellow-300 hover:underline">
-            +57 3194312083
+          <a href="tel:+3011783097" className="text-2xl font-bold text-yellow-300 hover:underline">
+            +57 3011783097
           </a>
-          <a href="tel:+3194312083" className="mt-4 inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full">
+          <a href="tel:+3011783097" className="mt-4 inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-full">
             Contáctanos Ahora
           </a>
         </div>

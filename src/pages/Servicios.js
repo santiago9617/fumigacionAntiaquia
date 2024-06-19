@@ -14,8 +14,8 @@ import WhatsAppButton from '../components/WhatsAppButton';
 const Servicios = () => {
 
   const openWhatsAppChat = () => {
-    const mensaje = encodeURIComponent("Buen día, me gustaría recibir más información sobre los servicios que ofrece Fumiplagas. ¿Podrían proporcionarme detalles sobre sus servicios de fumigación y el proceso de solicitud? Quedo a la espera de su respuesta. Gracias");
-    window.open(`https://wa.me/573014894440?text=${mensaje}`, '_blank');
+    const mensaje = encodeURIComponent("Hola, me gustaría recibir más información sobre los servicios que ofrece Fumiplagas. ¿Podrían proporcionarme detalles sobre sus servicios de fumigación y el proceso de solicitud? Quedo a la espera de su respuesta. Gracias");
+    window.open(`https://wa.me/573011783097?text=${mensaje}`, '_blank');
   };
   
   const servicios = [
@@ -93,7 +93,7 @@ const Servicios = () => {
       <div class="bg-gray-200 p-8 w-full">
         <p class="text-center text-lg font-semibold">Agenda Hoy Mismo Tu Cita, Fumigación en Medellín, valle de aburra y Alrededores.</p>
         <button onClick={openWhatsAppChat} class="block mx-auto mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-            Agenda: 301 489 4440
+            Agenda: 3011783097
         </button>
         </div>
         

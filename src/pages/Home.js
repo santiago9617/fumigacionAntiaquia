@@ -15,9 +15,7 @@ import imagen4 from '../img/rodenticida01.jpg';
 import PromocionFumigacion from '../components/PromocionFumigacion';
 import Certificacion from '../components/Certificacion';
 
-
 const Home = () => {
-
   const servicios = [
     {
       nombre: 'Control de Roedores',
@@ -42,41 +40,39 @@ const Home = () => {
   ];
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <Hero />
-      <PromocionFumigacion/> 
-      <WhatsAppButton />
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto p-4 text-gray-800">
-        <div className="md:col-span-1">
-          <Service />
+      <main className="flex-grow">
+        <Hero />
+        <PromocionFumigacion /> 
+        <WhatsAppButton />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto p-4 text-gray-800">
+          <div className="md:col-span-1">
+            <Service />
+          </div>
+          <div className="md:col-span-1">
+            <Projec />
+          </div>
+          <div className="md:col-span-1">
+            <Clients />
+          </div>
         </div>
-        <div className="md:col-span-1">
-          <Projec />
+        <Certificacion />
+        <div className="container mx-auto mt-8">
+          <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 font-mono">Servicios</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            {servicios.map((servicio, index) => (
+              <div key={index} className="bg-gray-100 p-6 flex flex-col items-center justify-center rounded-lg shadow-lg">
+                <img src={servicio.imagen} alt={servicio.nombre} className="w-32 h-32 mb-4 object-cover rounded-full" />
+                <h3 className="text-xl font-bold mb-2">{servicio.nombre}</h3>
+                <p className="text-sm text-center">{servicio.descripcion}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="md:col-span-1">
-          <Clients />
-        </div>
-      </div>
-    <Certificacion/>
-      <div className="container mx-auto mt-8">
-        <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 font-mono">Servicios</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {servicios.map((servicio, index) => (
-            <div key={index} className="bg-gray-100 p-6 flex flex-col items-center justify-center rounded-lg shadow-lg">
-              <img src={servicio.imagen} alt={servicio.nombre} className="w-32 h-32 mb-4 object-cover rounded-full" />
-              <h3 className="text-xl font-bold mb-2">{servicio.nombre}</h3>
-              <p className="text-sm text-center">{servicio.descripcion}</p><br/>
-            </div>
-          ))}
-        </div>
-      </div>
-      <br/>
-
-      <About />
-      <Testimonial />
-         
+        <About />
+        <Testimonial />
+      </main>
       <Footer />
     </div>
   );
