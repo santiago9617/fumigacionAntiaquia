@@ -1,17 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom'; 
 import Home from './pages/Home';
 import Servicios from './pages/Servicios';
 
 function App() {
   return (
-    <Router basename="/">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/servicios" element={<Servicios />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/servicios" element={<Servicios />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 

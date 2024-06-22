@@ -16,7 +16,7 @@ function Hero() {
                 Agendar por WhatsApp
             </button>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
-                <div className="absolute inset-0 bg-black bg-opacity-5"></div> {/* Fondo oscuro */}
+                <div className="absolute inset-0 bg-black bg-opacity-5"></div> 
                 <div className="bg-white p-8 rounded-lg shadow-lg max-w-2x1 mx-auto mt-96 relative z-10"> 
                     <h1 className="text-xl md:text-2xl text-gray-800 font-semibold">Soluciones innovadoras para el control de plagas</h1>
                     <h2 className="text-3xl md:text-4xl text-gray-800 font-bold mt-4">PROTEGIENDO TU HOGAR Y NEGOCIO</h2>
