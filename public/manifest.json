@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fumiplagas",
+  "name": "Fumigaciones en Antioquia",
+  "description": "Empresa de fumigación y control de plagas en Medellín, Bello, Envigado, Itagüí y toda el área metropolitana de Antioquia. Especialistas en fumigaciones para cucarachas, hormigas, ratas, roedores, chinches, comején y más.",
   "icons": [
     {
       "src": "favicon.ico",
