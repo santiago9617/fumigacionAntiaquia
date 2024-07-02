@@ -4,7 +4,7 @@ import logoWhatsApp from '../img/logo1-de-whatsapp.png';
 const WhatsAppButton = () => {
   const openWhatsAppChat = () => {
     const mensaje = encodeURIComponent("Hola, me gustaría recibir más información sobre los servicios que ofrece Fumiplagas. ¿Podrían proporcionarme detalles sobre sus servicios de fumigación y el proceso de solicitud? Quedo a la espera de su respuesta. Gracias");
-    window.open(`https://wa.me/573011783097?text=${mensaje}`, '_blank');
+    window.open(`https://wa.me/573014894440?text=${mensaje}`, '_blank');
   };
 
   return (

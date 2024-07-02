@@ -7,7 +7,7 @@ function Footer() {
         <div className="mb-4 md:mb-0">
           <h2 className="text-lg font-bold">FUMIPLAGAS JR</h2>
           <p className="mt-2 text-gray-400">Soluciones innovadoras para el control de plagas</p>
-          <p className="mt-2 text-gray-400">Whatsapp: 3011783097</p>
+          <p className="mt-2 text-gray-400">Whatsapp: 3014894440</p>
           <p className="mt-2 text-gray-400">Email: fumiplagasjr@gmail.com</p>
         </div>
         <div className="flex flex-col md:flex-row items-center">
