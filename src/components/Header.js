@@ -1,13 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../img/Logo-FUMIPLAGAS-JR.jpg';
+import { openWhatsAppChat } from './WhatsAppButton';
 
 function Header() {
 
-  const openWhatsAppChat = () => {
-    const mensaje = encodeURIComponent("Hola, me gustaría recibir más información sobre los servicios que ofrece Fumiplagas. ¿Podrían proporcionarme detalles sobre sus servicios de fumigación y el proceso de solicitud? Quedo a la espera de su respuesta. Gracias");
-    window.open(`https://wa.me/573014894440?text=${mensaje}`, '_blank');
-  };
 
   return (
     <header id='inicio' className="bg-orange-600 text-white p-4 flex justify-center">

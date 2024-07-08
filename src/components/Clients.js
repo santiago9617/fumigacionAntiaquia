@@ -15,11 +15,11 @@ function Clients() {
       <div className="text-center mt-4 max-w-2xl mx-auto">
         <div className="flex items-center mb-2">
           {chulo}
-          <span className="ml-2">Productos bajos o NULOS en toxicidad.</span>
+          <span className="ml-2">Productos bajos o NULOS en <br/>toxicidad.</span>
         </div>
         <div className="flex items-center mb-2">
           {chulo}
-          <span className="ml-2">Proceso amigable con tus mascotas.</span>
+          <span className="ml-2">Proceso amigable con tus <br/>mascotas.</span>
         </div>
         <div className="flex items-center mb-2">
           {chulo}
@@ -35,7 +35,7 @@ function Clients() {
         </div>
         <div className="flex items-center mb-2">
           {chulo}
-          <span className="ml-2">Proveedores Certificados y Auditados</span>
+          <span className="ml-2">Proveedores Certificados y <br/>Auditados</span>
         </div>
       </div>
       
