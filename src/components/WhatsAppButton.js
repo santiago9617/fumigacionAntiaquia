@@ -9,7 +9,7 @@ export const openWhatsAppChat = () => {
 
 const WhatsAppButton = () => {
   return (
-    <div className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 md:bottom-12 md:right-12 lg:bottom-16 lg:right-16 z-10 cursor-pointer">
+    <div id="whatsapp-button" className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 md:bottom-12 md:right-12 lg:bottom-16 lg:right-16 z-10 cursor-pointer">
       <img
         src={logoWhatsApp}
         alt="WhatsApp"
