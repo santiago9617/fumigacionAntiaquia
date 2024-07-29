@@ -62,7 +62,12 @@ const Home = () => {
           <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 font-mono">Servicios</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {servicios.map((servicio, index) => (
-              <div key={index} className="bg-gray-100 p-6 flex flex-col items-center justify-center rounded-lg shadow-lg">
+              <div
+                key={index}
+                className={`p-6 flex flex-col items-center justify-center rounded-lg shadow-lg ${
+                  index % 2 === 0 ? 'bg-orange-100' : 'bg-slate-50'
+                }`}
+              >
                 <img src={servicio.imagen} alt={servicio.nombre} className="w-32 h-32 mb-4 object-cover rounded-full" />
                 <h3 className="text-xl font-bold mb-2">{servicio.nombre}</h3>
                 <p className="text-sm text-center">{servicio.descripcion}</p>

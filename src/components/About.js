@@ -1,6 +1,6 @@
 // src/components/About.js
 import React from 'react';
-import Image from '../img/pexels-kacper-wolski-345137-950149.jpg';
+import Image from '../img/montana.jpg';
 import { openWhatsAppChat } from './WhatsAppButton';
 
 function About() {

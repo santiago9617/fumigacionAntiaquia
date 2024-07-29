@@ -12,12 +12,11 @@ import imagen8 from '../img/restaurante.jpg';
 import WhatsAppButton from '../components/WhatsAppButton';
 
 const Servicios = () => {
-
   const openWhatsAppChat = () => {
     const mensaje = encodeURIComponent("Hola FumiPlagas J.R. Necesito información sobre sus servicios de control de plagas.");
     window.open(`https://wa.me/573014894440?text=${mensaje}`, '_blank');
   };
-  
+
   const servicios = [
     {
       nombre: 'Control de Roedores',
@@ -45,58 +44,64 @@ const Servicios = () => {
     {
       nombre: 'RESIDENCIAS',
       imagen: imagen7,
-     
     },
     {
       nombre: 'Ámbito Sanitario',
       imagen: imagen6, 
     },
     {
-      nombre: 'SECTOR  DE ALIMENTOS',
+      nombre: 'SECTOR DE ALIMENTOS',
       imagen: imagen8,
     },
     {
       nombre: 'Ámbito industrial',
       imagen: imagen5,
-      
     },
   ];
 
   return (
     <>
       <Header />
-        <WhatsAppButton/>
+      <WhatsAppButton />
       <div className="container mx-auto mt-8">
-        <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 font-mono">Nuestros Servicios</h2> 
+        <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 font-mono">Nuestros Servicios</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {servicios.map((servicio, index) => (
-            <div key={index} className="bg-gray-100 p-6 flex flex-col items-center justify-center rounded-lg shadow-lg">
+            <div
+              key={index}
+              className={`p-6 flex flex-col items-center justify-center rounded-lg shadow-lg ${
+                index % 2 === 0 ? 'bg-orange-100' : 'bg-slate-50'
+              }`}
+            >
               <img src={servicio.imagen} alt={servicio.nombre} className="w-32 h-32 mb-4 object-cover rounded-full" />
               <h3 className="text-xl font-bold mb-2">{servicio.nombre}</h3>
               <p className="text-sm text-center">{servicio.descripcion}</p>
             </div>
           ))}
         </div>
-        <div className="container mx-auto mt-8">
-        <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 font-mono">Servicios</h2> {/* Título con estilos personalizados */}
+      </div>
+      <div className="container mx-auto mt-8">
+        <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 font-mono">Clases de Servicio</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {clases.map((clases, index) => (
-            <div key={index} className="bg-gray-100 p-6 flex flex-col items-center justify-center rounded-lg shadow-lg">
-              <img src={clases.imagen} alt={clases.nombre} className="w-32 h-32 mb-4 object-cover rounded-full" />
-              <h3 className="text-xl font-bold mb-2">{clases.nombre}</h3>
-              <p className="text-sm text-center">{clases.descripcion}</p>
+          {clases.map((clase, index) => (
+            <div
+              key={index}
+              className={`p-6 flex flex-col items-center justify-center rounded-lg shadow-lg ${
+                index % 2 === 0 ? 'bg-orange-100' : 'bg-slate-50'
+              }`}
+            >
+              <img src={clase.imagen} alt={clase.nombre} className="w-32 h-32 mb-4 object-cover rounded-full" />
+              <h3 className="text-xl font-bold mb-2">{clase.nombre}</h3>
             </div>
           ))}
         </div>
       </div>
-      </div>
-      <div class="bg-gray-200 p-8 w-full">
-        <p class="text-center text-lg font-semibold">Agenda Hoy Mismo Tu Cita, Fumigación en Medellín, valle de aburra y Alrededores.</p>
-        <button onClick={openWhatsAppChat} class="block mx-auto mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-            Agenda: 3014894440
+      <div className="bg-gray-200 p-8 w-full">
+        <p className="text-center text-lg font-semibold">Agenda Hoy Mismo Tu Cita, Fumigación en Medellín, valle de Aburra y Alrededores.</p>
+        <button onClick={openWhatsAppChat} className="block mx-auto mt-4 bg-red-900 hover:bg-red-900 text-white font-bold py-2 px-4 rounded">
+          Agenda: 3014894440
         </button>
-        </div>
-        
+      </div>
       <Footer />
     </>
   );

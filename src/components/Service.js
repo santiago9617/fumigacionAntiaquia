@@ -11,7 +11,7 @@ function Service() {
   };
 
   return (
-    <section id="services" className="p-8 bg-gray-100">
+    <section id="services" className="p-8 bg-orange-100">
       <h2 className="font-mono text-3xl font-bold text-center">NUESTROS SERVICIOS</h2>
       <p className="text-center mt-4 max-w-2xl mx-auto">Somos expertos en el control de plagas y ofrecemos soluciones efectivas para hogares y negocios. Nuestros servicios incluyen fumigación, control de cucarachas, roedores, tratamiento de termitas, entre otros. Protegemos tu espacio para que puedas vivir y trabajar sin preocupaciones.</p>
       <Link to="/servicios" >

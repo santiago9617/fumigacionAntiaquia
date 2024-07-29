@@ -14,7 +14,7 @@ function Hero() {
             </button>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
                 <div className="absolute inset-0 bg-black bg-opacity-5"></div> 
-                <div className="bg-white p-8 rounded-lg shadow-lg max-w-2x1 mx-auto mt-96 relative z-10"> 
+                <div className="bg-orange-100 p-8 rounded-lg shadow-lg max-w-2x1 mx-auto mt-96 relative z-10"> 
                     <h1 className="text-xl md:text-2xl text-gray-800 font-semibold">Soluciones innovadoras para el control de plagas</h1>
                     <h2 className="text-3xl md:text-4xl text-gray-800 font-bold mt-4">PROTEGIENDO TU HOGAR Y NEGOCIO</h2>
                     <button onClick={openWhatsAppChat} className="mt-6 bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition duration-300 border border-blue-600">Contáctanos para una inspección</button>

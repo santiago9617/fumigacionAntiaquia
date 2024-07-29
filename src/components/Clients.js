@@ -10,7 +10,7 @@ function Clients() {
   );
   
   return (
-    <section id="clients" className="p-8 bg-gray-100">
+    <section id="clients" className="p-8 bg-orange-100">
       <h2 className="font-mono text-3xl font-bold text-center">Lo Que Nos Diferencia</h2>
       <div className="text-center mt-4 max-w-2xl mx-auto">
         <div className="flex items-center mb-2">
