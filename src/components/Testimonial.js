@@ -18,18 +18,18 @@ import { PrevArrow, NextArrow } from './Flecha';
 
 const Testimonial = () => {
   const testimonios = [
-    testimonio0,
-    testimonio1,
-    testimonio2,
-    testimonio3,
-    testimonio4,
-    testimonio5,
-    testimonio6,
-    testimonio7,
-    testimonio8,
-    testimonio9,
-    testimonio10,
-    testimonio11
+    { src: testimonio0, width: 800, height: 600 },
+    { src: testimonio1, width: 800, height: 600 },
+    { src: testimonio2, width: 800, height: 600 },
+    { src: testimonio3, width: 800, height: 600 },
+    { src: testimonio4, width: 800, height: 600 },
+    { src: testimonio5, width: 800, height: 600 },
+    { src: testimonio6, width: 800, height: 600 },
+    { src: testimonio7, width: 800, height: 600 },
+    { src: testimonio8, width: 800, height: 600 },
+    { src: testimonio9, width: 800, height: 600 },
+    { src: testimonio10, width: 800, height: 600 },
+    { src: testimonio11, width: 800, height: 600 },
   ];
 
   const sliderRef = useRef(null);
@@ -64,7 +64,13 @@ const Testimonial = () => {
         <Slider ref={sliderRef} {...settings}>
           {testimonios.map((testimonio, index) => (
             <div key={index} className="p-2">
-              <img src={testimonio} alt={`Testimonio ${index}`} className="max-h-96 w-full object-contain rounded-lg shadow-lg" />
+              <img
+                src={testimonio.src}
+                alt={`Testimonio ${index}`}
+                width={testimonio.width}
+                height={testimonio.height}
+                className="max-h-96 w-full object-contain rounded-lg shadow-lg"
+              />
             </div>
           ))}
         </Slider>

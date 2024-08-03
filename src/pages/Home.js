@@ -15,6 +15,7 @@ import imagen4 from '../img/rodenticida01.jpg';
 import PromocionFumigacion from '../components/PromocionFumigacion';
 import Certificacion from '../components/Certificacion';
 
+
 const Home = () => {
   const servicios = [
     {
@@ -58,6 +59,8 @@ const Home = () => {
           </div>
         </div>
         <Certificacion />
+       
+
         <div className="container mx-auto mt-8">
           <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 font-mono">Servicios</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -75,6 +78,8 @@ const Home = () => {
             ))}
           </div>
         </div>
+
+
         <About />
         <Testimonial />
       </main>
