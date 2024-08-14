@@ -7,14 +7,13 @@ import About from '../components/About';
 import Testimonial from '../components/Testimonial';
 import Footer from '../components/Footer';
 import Service from '../components/Service';
-import WhatsAppButton from '../components/WhatsAppButton';
+import PromocionFumigacion from '../components/PromocionFumigacion';
+import Certificacion from '../components/Certificacion';
 import imagen1 from '../img/IMG_9509-FILEminimizer.webp';
 import imagen2 from '../img/Desinfeccion-de-Hogares-y-Locales-Comerciales-en-Medellín-e1602727479659.jpg';
 import imagen3 from '../img/Fumigacion-de-Plagas-en-Medellin-y-Valle-de-Aburra-1024x978.jpeg';
 import imagen4 from '../img/rodenticida01.jpg';
-import PromocionFumigacion from '../components/PromocionFumigacion';
-import Certificacion from '../components/Certificacion';
-
+import { WhatsAppButton, PhoneCallButton } from '../components/WhatsAppButton'; // Asegúrate de que la ruta sea correcta
 
 const Home = () => {
   const servicios = [
@@ -46,6 +45,7 @@ const Home = () => {
       <main className="flex-grow">
         <Hero />
         <PromocionFumigacion /> 
+        <PhoneCallButton />
         <WhatsAppButton />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-auto p-4 text-gray-800">
           <div className="md:col-span-1">
@@ -59,8 +59,6 @@ const Home = () => {
           </div>
         </div>
         <Certificacion />
-       
-
         <div className="container mx-auto mt-8">
           <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 font-mono">Servicios</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -78,8 +76,6 @@ const Home = () => {
             ))}
           </div>
         </div>
-
-
         <About />
         <Testimonial />
       </main>

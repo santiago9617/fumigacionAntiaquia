@@ -10,8 +10,7 @@ const PromocionFumigacion = () => {
           <div className="flex items-center justify-center md:justify-start mb-4">
             <ShieldCheckIcon className="h-6 w-6 text-white mr-2" />
             <p className="text-lg font-mono text-white">
-            <span className="bg-red-800 text-Slate-800 font-bold px-2 py-1 rounded-md animate-pulse">Garantía de 6 meses</span>
-
+              <span className="bg-red-800 text-Slate-800 font-bold px-2 py-1 rounded-md animate-pulse">Garantía de 6 meses</span>
             </p>
           </div>
           <p className="text-stone-900">
@@ -24,12 +23,13 @@ const PromocionFumigacion = () => {
             <PhoneIcon className="h-6 w-6 text-stone-950 mr-2" />
             Teléfono:
           </p>
-          <a href="tel:+3014894440" className="text-2xl font-bold text-stone-950 hover:underline">
-            +57 3014894440
+          <a href="tel:+573014894440" className="text-2xl font-bold text-stone-950 hover:underline">
+            301 489 4440
           </a>
-          <a href="tel:+3014894440" className="mt-4 inline-block bg-red-800 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
+          <a href="tel:+573014894440" className="mt-4 inline-block bg-red-800 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full">
             Contáctanos Ahora
           </a>
+          
         </div>
       </div>
     </div>

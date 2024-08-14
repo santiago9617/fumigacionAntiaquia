@@ -9,7 +9,8 @@ import imagen5 from '../img/industria.jpg';
 import imagen6 from '../img/hospital.jpg';
 import imagen7 from '../img/medellin.jpg';
 import imagen8 from '../img/restaurante.jpg';
-import WhatsAppButton from '../components/WhatsAppButton';
+import { WhatsAppButton, PhoneCallButton } from '../components/WhatsAppButton'; // Asegúrate de que la ruta sea correcta
+
 
 const Servicios = () => {
   const openWhatsAppChat = () => {
@@ -62,7 +63,12 @@ const Servicios = () => {
   return (
     <>
       <Header />
-      <WhatsAppButton />
+      <div className="fixed bottom-4 right-4 z-10">
+        <WhatsAppButton />
+      </div>
+      <div className="fixed bottom-20 right-4 z-10">
+        <PhoneCallButton />
+      </div>
       <div className="container mx-auto mt-8">
         <h2 className="text-3xl font-bold mb-6 text-center text-gray-800 font-mono">Nuestros Servicios</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -97,8 +103,8 @@ const Servicios = () => {
         </div>
       </div>
       <div className="bg-gray-200 p-8 w-full">
-        <p className="text-center text-lg font-semibold">Agenda Hoy Mismo Tu Cita, Fumigación en Medellín, valle de Aburra y Alrededores.</p>
-        <button onClick={openWhatsAppChat} className="block mx-auto mt-4 bg-red-900 hover:bg-red-900 text-white font-bold py-2 px-4 rounded">
+        <p className="text-center text-lg font-semibold">Agenda Hoy Mismo Tu Cita, Fumigación en Medellín, Valle de Aburra y Alrededores.</p>
+        <button onClick={openWhatsAppChat} className="block mx-auto mt-4 bg-red-900 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
           Agenda: 3014894440
         </button>
       </div>

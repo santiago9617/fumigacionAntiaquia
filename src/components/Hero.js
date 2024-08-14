@@ -4,13 +4,13 @@ import logoWhatsapp from '../img/logo1-de-whatsapp.png';
 import { openWhatsAppChat } from './WhatsAppButton';
 
 function Hero() {
-    // Ajusta estos valores a las dimensiones reales del logo
+    
     const logoWidth = 24; 
     const logoHeight = 24; 
 
     return (
         <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: `url(${Image})` }}>
-            <button onClick={openWhatsAppChat} className="absolute top-1/2 left-0 transform -translate-y-1/2 flex items-center bg-green-500 text-white px-4 py-2">
+            <button onClick={openWhatsAppChat} className="absolute top-1/2 left-0 transform -translate-y-1/2 flex items-center bg-green-500 text-white px-4 py-2 z-20">
                 <img 
                     src={logoWhatsapp} 
                     alt="Logo de WhatsApp" 

@@ -14,6 +14,9 @@ module.exports = {
       animation: {
         pulse: 'pulse 2s infinite',
       },
+      spacing: {
+        '50': '12.5rem',
+      },
     },
   },
   plugins: [],
